@@ -40,3 +40,15 @@ function removeElement() {
   const element = document.getElementById("to-be-removed");
   element.remove();
 }
+
+
+// IMPORTANT: required for autograder
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    changeHeadingText,
+    changeBoxColor,
+    addNewItem,
+    highlightParagraph,
+    removeElement
+  };
+}
